@@ -1,0 +1,47 @@
+PURPOSE: Provide an easy way to trade/sell textbooks at BYU to avoid paying bookstore prices
+
+SIMILAR SITES:
+	BYU provides a service like this. However, they have a listing of all the books in the store, and you can post saying you have it available.  You have to already know the name of the book you're looking for, and people post individual books.
+
+DESIGN:
+	Each user has an account.  Their account has an inventory; you can declare what books you have for trade or sale.  Books should have the following information: title, author, ISBN, class it's for, condition; optionally can include an asking price/trade for the book.  Anyone can browse offerings by title, author, ISBN, or class. You can filter/sort results by quality or asking price/trade.  If you find something you want, you can click on it to make an offer to the owner. They can in return make a counter-offer; once both of you agree to an offer, the book in question is marked as unavailable on the website.
+	Users can also post books they're looking for, which users can respond to in the same way as above.
+
+ADVANTAGE OF MY DESIGN:
+	Don't have to know the title of the book; you only need to know which class you're looking for. More personalized offer system, much more flexible; can offer goods/services in kind (good for poor college students).  It's a marketplace, not a store.
+
+COMPONENTS OF THE SITE:	
+	Welcome page
+		introduces users to the site, its mission, and how to use it.
+	About page
+		more detailed description of the purpose of the site, long-term goals, and how to support the project
+	Browse page
+		this is the main page for the site; this is where products can be browsed, selected, and have offers made
+	Contact page
+		this is for contacting the owner of the website (me)
+	Login page
+		this page is for logging in to your account.
+	Account page
+		this page is only accessible by logging in. From here, you can manage the details of your account, including adding/removing books or wants from your inventory
+	User page
+		This page is for viewing another user; shows you their reputation and inventory, picture, and email (if they've made it public).  You can also send them a message through the system.  You can also report them for inappropriate content.
+
+COMPONENTS OF AN ACCOUNT:
+	username - must be unique
+	password - determined by user
+	email - required
+	picture - optional
+	reputation - can be increased/decreased by trading with one another
+	inventory - list of books for trade
+	pending trades - this can only be viewed by the user; these are proposed trades that haven't been accepted or declined
+	pending deals - a list of accepted offers that haven't been marked as completed
+	message box - this contains personal messages, along with offer/counter-offers
+
+OFFER PROCESS:
+	If you see an offer you want to take (whether this is a book for trade or a wanted you want to fulfill), you click on 'Make an Offer'. This opens a dialog box where you can offer whatever you want; if you are logged in as a user, this will include a list of books in your inventory that you can offer.  There should be 3 basic types of offers (that can all be combined): books in your inventory, money, other (goods/services not included in the site). You can also include a message.  When done, you click a button to send your offer to the owner.
+	When you receive an offer, you can either accept, decline, or make a counter-offer.  This will still show the details of the original offer (which you can't edit), but you can propose any changes you think are appropriate.  The other user will see this as as an offer.  
+	The offer process continues until an offer is accepted or declined.  Once you accept an offer, any books you included from your inventory in the offer will be marked as unavailable (they aren't publicly searchable, and show as unavailable on your account).  The offer disappears from both of your pending trades, and the final version is shown on your pending deals.
+
+PENDING DEALS:
+	This is just a way of tracking deals that have been agreed to.  Once you've physically made the trade, you mark the pending deal as complete; this will prompt you to say whether you are satisfied with the deal.  If you are, the person you've been trading with gets a +1 to their reputation. If you aren't, they get a -1. Any inventory items marked in the deal will automatically be removed from your inventory.
+	If one of you decides to back out of the deal, you can cancel a pending deal, which will make any 'unavailable' books become available again.  Nobody's reputation changes.

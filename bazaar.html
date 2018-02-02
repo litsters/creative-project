@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Bazaar</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="header">
+      <div class="banner bazaar">
+        <div class="link_wrapper">
+          <div class="link-wrapper-left">
+            <div class="logo">
+              <img src="/img/book_icon.png">
+            </div>
+          </div>
+          <div class="link-wrapper-center">
+             <div class="navbar">
+               <div class="navlink">
+                 <a href="/index.html">HOME</a>
+               </div>
+               <div class="navlink active">
+                 <a href="/bazaar.html">BROWSE</a>
+               </div>
+               <div class="navlink">
+                 <a href="/about.html">ABOUT</a>
+               </div>
+               <div class="navlink">
+                 <a href="/contact.html">CONTACT</a>
+               </div>
+             </div> 
+          </div>
+          <div class="link-wrapper-right">
+            <div class="user_nav">
+              <a href="/login.html">Log In</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner_content">
+          <h1>This is how economic freedom begins.</h1>
+          <p>Buy, sell, trade. You want it, find it here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="grid-container">
+        <div class="search-bar">
+          <div align="center" class="search-form">
+          <form name="search_form">
+            <label>Search for: </label>
+            <input type="text" name="search_term" class="search-term">
+            <label>Category: </label>
+            <select name="search_category" class="search-term">
+              <option value="all">Search All</option>
+              <option value="title">Title</option>
+              <option value="class">Class</option>
+              <option value="ISBN">ISBN</option>
+              <option value="condition">Condition</option>
+            </select>
+            <button type="submit" class="search-button">Search</button>
+          </form>
+          </div>
+        </div>
+        <div class="filter-bar">
+          <form name="filter_form">
+            <label>Sort By:</label>
+            <select name="sort_method" class="search-term">
+              <option value="title_a2z">Title, A to Z</option>
+              <option value="title_z2a">Title, Z to A</option>
+              <option value="class_a2z">Class, A to Z</option>
+              <option value="class_z2a">Class, Z to A</option>
+              <option value="condition_w2b">Condition, Worst to Best</option>
+              <option value="condition_b2w">Condition, Best to Worst</option>
+            </select><br>
+            <label>Filter Results By:</label><br>
+            <label>Condition</label><br>
+            <input type="checkbox" value="condition_good" checked>Good</input><br>
+            <input type="checkbox" value="condition_fair" checked>Fair</input><br>
+            <label>Class</label><br>
+            <input type="checkbox" value="class_is110" checked>IS 110</input><br>
+            <input type="checkbox" value="class_hist101" checked>HIST 101</input><br>
+            <input type="checkbox" value="class_cs142" checked>CS 142</input><br>
+            <button type="submit" class="filter-button search-button">Apply Filters</button>
+          </form>
+        </div>
+        <div class="results-container">
+          <div class="results-box">
+            <div class="result">
+              <div class="result-photo">
+                <img src="/img/book3.jpg">
+              </div>
+              <div class="result-description">
+                <div class="result-label"><h4>Title:</h4></div>
+                <div class="result-text"><p>5 Very Good Reasons to Punch a Dolphin in the Mouth</p></div>
+                <div class="result-label"><h4>Class:</h4></div>
+                <div class="result-text"><p>HIST 101<p></div>
+                <div class="result-label"><h4>ISBN:</h4></div>
+                <div class="result-text"><p>Unknown</p></div>
+                <div class="result-label"><h4>Condition:</h4></div>
+                <div class="result-text"><p>Like New</p></div>
+                <div class="result-label"><h4>Seller:</h4></div>
+                <div class="result-text"><p>sup4s3ll3r</p></div>
+              </div>
+            </div>
+            <div class="result">
+              <div class="result-photo">
+                <img src="/img/book1.jpg">
+              </div>
+              <div class="result-description">
+                <div class="result-label"><h4>Title:</h4></div>
+                <div class="result-text"><p>Digital Logic and Computer Design</p></div>
+                <div class="result-label"><h4>Class:</h4></div>
+                <div class="result-text"><p>CS 142<p></div>
+                <div class="result-label"><h4>ISBN:</h4></div>
+                <div class="result-text"><p>Unknown</p></div>
+                <div class="result-label"><h4>Condition:</h4></div>
+                <div class="result-text"><p>Good</p></div>
+                <div class="result-label"><h4>Seller:</h4></div>
+                <div class="result-text"><p>cougsfan193</p></div>
+              </div>
+            </div>
+            <div class="result">
+              <div class="result-photo">
+                <img src="/img/book2.jpg">
+              </div>
+              <div class="result-description">
+                <div class="result-label"><h4>Title:</h4></div>
+                <div class="result-text"><p>The Americans</p></div>
+                <div class="result-label"><h4>Class:</h4></div>
+                <div class="result-text"><p>HIST 101<p></div>
+                <div class="result-label"><h4>ISBN:</h4></div>
+                <div class="result-text"><p>Unknown</p></div>
+                <div class="result-label"><h4>Condition:</h4></div>
+                <div class="result-text"><p>Fair</p></div>
+                <div class="result-label"><h4>Seller:</h4></div>
+                <div class="result-text"><p>sv3nmcbr1d3</p></div>
+              </div>
+            </div>
+            <div class="result">
+              <div class="result-photo">
+                <img src="/img/book4.jpg">
+              </div>
+              <div class="result-description">
+                <div class="result-label"><h4>Title:</h4></div>
+                <div class="result-text"><p>Microfomats</p></div>
+                <div class="result-label"><h4>Class:</h4></div>
+                <div class="result-text"><p>IS 110<p></div>
+                <div class="result-label"><h4>ISBN:</h4></div>
+                <div class="result-text"><p>112358132134</p></div>
+                <div class="result-label"><h4>Condition:</h4></div>
+                <div class="result-text"><p>Good</p></div>
+                <div class="result-label"><h4>Seller:</h4></div>
+                <div class="result-text"><p>tim</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="/index.html">View on GitHub</a>
+    </div>
+  </body>
+</html>

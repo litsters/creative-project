@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Bazaar</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="header">
+      <div class="banner contact">
+        <div class="link_wrapper">
+          <div class="link-wrapper-left">
+            <div class="logo">
+              <img src="/img/book_icon.png">
+            </div>
+          </div>
+          <div class="link-wrapper-center">
+             <div class="navbar">
+               <div class="navlink">
+                 <a href="/index.html">HOME</a>
+               </div>
+               <div class="navlink">
+                 <a href="/bazaar.html">BROWSE</a>
+               </div>
+               <div class="navlink">
+                 <a href="/about.html">ABOUT</a>
+               </div>
+               <div class="navlink active">
+                 <a href="/contact.html">CONTACT</a>
+               </div>
+             </div> 
+          </div>
+          <div class="link-wrapper-right">
+            <div class="user_nav">
+              <a href="/login.html">Log In</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner_content">
+          <h1>Like what you see?</h1>
+          <p>We would love to hear from you!</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="contact-form-container">
+        <form action="https://formspree.io/snlitster@gmail.com" method="POST">
+          <label>Name*</label>
+          <input type="text" name="name" required class="text_field">
+          <label>Email Address*</label>
+          <input type="email" name="_replyto" required class="text_field">
+          <label>Subject*</label>
+          <input type="text" name="subject" required class="text_field">
+          <label>Message*</label>
+          <textarea name="message" rows="5" cols="50" required class="text_field"></textarea>
+          <button type="submit" value="Send" class="submit_button">SUBMIT</button>
+        </form> 
+      </div>
+    </div>
+    <div class="footer">
+      <a href="/index.html">View on GitHub</a>
+    </div>
+  </body>
+</html>

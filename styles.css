@@ -1,0 +1,324 @@
+/* Universal */
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.header {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+/* Banner */
+
+.banner {
+  display: block;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.banner h1,p {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 400%;
+}
+
+.banner p {
+  font-size: 200%;
+}
+
+.link_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.link-wrapper-left {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.link-wrapper-center {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.link-wrapper-right {
+  display: flex;
+  flex: 1 1 auto;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  width: 6vw;
+  margin-left: 1vw;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+}
+
+/* Navigation */
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.navlink {
+  flex: 1 1 auto;
+  align-items: center;
+  margin: auto;
+  border-bottom: 3px solid transparent;
+}
+
+.navlink:hover {
+  border-bottom: 3px solid #fc1200;
+}
+
+.navlink a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid #fc1200;
+}
+
+.user_nav {
+  height: 5vh;
+  background-color: #02879a;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-right: 2vw;
+}
+
+.user_nav a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+
+/* Welcome page */
+
+.landing {
+  background-image: url('/img/booklove.jpg');
+}
+
+.panel {
+  width: 50%;
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+.panel-1 h2{
+  font-size: 200%;
+  margin-top: 6vh;
+}
+
+.panel-2 h3, .panel-2 p{
+  margin: 0;
+  padding: 0;
+  padding-top: 5vh;
+}
+
+/* Browse page */
+
+.bazaar {
+  background-image: url('/img/freedom.jpg');
+}
+
+.grid-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 6vh auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+    
+}
+
+.search-bar {
+  grid-area: header;
+}
+
+.search-form {
+  margin-top: 5px;;
+}
+
+.search-term {
+  background-color: #e6e6e6;
+  border-style: solid;
+  height: 100%;
+  padding: 3px;
+}
+
+.search-button {
+  background-color: #02879a;
+  padding: 14px 16px;
+  color: white;
+}
+
+.results-container {
+  grid-area: main;
+  display: grid;
+  padding-left: 5px;
+}
+
+.filter-bar {
+  display: block;
+  grid-area: sidebar;
+}
+
+.filter-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+}
+
+.results-box {
+  display: block;
+}
+
+.result {
+  padding: 5px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  border-style: solid;
+  border-color: #e6e6e6;
+}
+
+.result h4, .result p {
+  display: inline;
+  margin-left: 5px;
+}
+
+.result-photo img {
+  width: 100%;
+}
+
+.result-description {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+}
+
+/* About */
+
+.about {
+  background-image: url('/img/education.jpg');
+}
+
+/* Contact */
+
+.contact {
+  background-image: url('/img/letter.jpg');
+}
+
+.contact-form-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-container label {
+  color: #666666; 
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.text_field {
+  width: 90%;
+  display: block;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+
+.submit_button {
+  display: block;
+  padding: 14px 16px;
+  background-color: #02879a;
+  color: white;
+  /*border:  2px solid black;*/
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+}
+
+/* Login */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #d9d9d9;
+  background-color: #f2f2f2;
+}
+
+.login-form {
+  display: block;
+  width: 20vw;
+  margin: 10px;
+}
+
+.login-field {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.login-button {
+  width: 100%;
+}
+
+.login {
+  background-image: url('/img/bookstore.jpg');
+  background-size: 100%;
+}
